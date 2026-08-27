@@ -440,10 +440,7 @@ button{font-family:inherit;}
   background-image:radial-gradient(rgba(250,243,229,0.05) 1px, transparent 1px);
   background-size:4px 4px;
 }
-.market .wrap{position:relative;display:grid;gap:48px;}
-@media(min-width:960px){
-  .market .wrap{grid-template-columns:1fr 1fr;align-items:center;gap:64px;}
-}
+.market .wrap{position:relative;display:grid;gap:48px;max-width:60ch;}
 .market .eyebrow{color:var(--mustard);}
 .market .eyebrow::before{background:var(--mustard);}
 .market h2{font-size:clamp(2rem,4vw,2.6rem);margin-top:18px;line-height:1.08;}
@@ -457,13 +454,6 @@ button{font-family:inherit;}
   font-weight:600;
   letter-spacing:.02em;
 }
-.market-visual{
-  aspect-ratio:1/1;
-  position:relative;
-  overflow:hidden;
-}
-.market-visual img{width:100%;height:100%;object-fit:cover;display:block;}
-
 /* ==========================================================================
    Visit / info
    ========================================================================== */
