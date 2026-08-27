@@ -298,22 +298,22 @@ button{font-family:inherit;}
 .hero-panel{
   position:relative;
   aspect-ratio:4/5;
-  background:var(--olive);
   border-radius:var(--radius);
   overflow:hidden;
   box-shadow:var(--shadow);
 }
 .hero-panel img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;}
-.hero-panel-tag{
-  position:absolute;left:20px;bottom:20px;right:20px;
-  background:rgba(36,27,20,0.72);
-  color:var(--paper);
-  padding:16px 18px;
-  border-radius:var(--radius);
-  font-size:.85rem;
-  backdrop-filter:blur(4px);
+.hero-caption{
+  margin-top:16px;
+  font-size:.92rem;
+  color:var(--ink-soft);
 }
-.hero-panel-tag strong{display:block;font-family:var(--font-display);font-size:1.15rem;font-weight:600;margin-bottom:2px;}
+.hero-caption strong{
+  font-family:var(--font-display);
+  font-weight:600;
+  color:var(--ink);
+  margin-right:.4em;
+}
 
 /* ==========================================================================
    Intro strip (three quick facts)
@@ -338,43 +338,31 @@ button{font-family:inherit;}
    Story section
    ========================================================================== */
 .story{padding:96px 0;}
-.story .wrap{display:grid;gap:52px;}
-@media(min-width:960px){
-  .story .wrap{grid-template-columns:.85fr 1.15fr;align-items:center;gap:64px;}
-}
-.story-visual{
-  position:relative;
-  aspect-ratio:3/4;
-  background:var(--rust);
-  border-radius:var(--radius);
-  overflow:hidden;
-  box-shadow:var(--shadow);
-}
-.story-visual svg{width:100%;height:100%;}
+.story-wrap{max-width:56ch;}
+.story-head h2{font-size:clamp(2rem,4vw,2.7rem);margin-top:18px;line-height:1.08;}
+.story-body{margin-top:28px;display:flex;flex-direction:column;gap:20px;font-size:1.02rem;color:var(--ink-soft);}
+.story-body strong{color:var(--ink);}
 .story-quote{
-  margin-top:20px;
-  padding:18px 20px;
+  margin:6px 0;
+  padding:20px 26px;
   border-left:3px solid var(--rust);
   background:var(--paper);
   font-family:var(--font-display);
   font-style:italic;
-  font-size:1.05rem;
-  color:var(--ink-soft);
+  font-size:1.15rem;
+  color:var(--ink);
 }
 .story-quote cite{
   display:block;
-  margin-top:10px;
+  margin-top:12px;
   font-family:var(--font-body);
   font-style:normal;
   font-weight:700;
   font-size:.75rem;
   letter-spacing:.08em;
   text-transform:uppercase;
-  color:var(--ink);
+  color:var(--ink-soft);
 }
-.story h2{font-size:clamp(2rem,4vw,2.7rem);margin-top:18px;line-height:1.08;}
-.story-body{margin-top:22px;display:flex;flex-direction:column;gap:16px;font-size:1.02rem;color:var(--ink-soft);max-width:56ch;}
-.story-body strong{color:var(--ink);}
 
 /* ==========================================================================
    Menu / family dishes
@@ -472,7 +460,6 @@ button{font-family:inherit;}
 .market-visual{
   aspect-ratio:1/1;
   position:relative;
-  border:1px solid rgba(250,243,229,0.25);
   overflow:hidden;
 }
 .market-visual img{width:100%;height:100%;object-fit:cover;display:block;}
