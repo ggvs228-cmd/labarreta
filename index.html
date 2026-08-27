@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>La Barreta — Bar de barri a Gràcia, Barcelona</title>
+<meta name="description" content="La Barreta, bar de barrio en Gràcia. Ángel cocina cada día con lo que trae el mercado y pone el nombre de su familia a los platos. Vermut, bocadillos y tapas de toda la vida.">
+<link rel="icon" href="data:,">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- ============================= HEADER ============================= -->
+<header class="site-header">
+  <div class="wrap">
+    <a href="#top" class="brand">
+      <span class="brand-mark">La Barreta</span>
+      <span class="brand-sub" data-i18n="brand.sub">Bar de barri · Gràcia</span>
+    </a>
+
+    <nav class="main-nav" aria-label="Principal">
+      <ul>
+        <li><a href="#historia" data-i18n="nav.story">La historia</a></li>
+        <li><a href="#carta" data-i18n="nav.menu">La carta</a></li>
+        <li><a href="#mercado" data-i18n="nav.market">El mercado</a></li>
+        <li><a href="#visita" data-i18n="nav.visit">Cómo llegar</a></li>
+      </ul>
+    </nav>
+
+    <div class="header-actions">
+      <div class="lang-switch" role="group" aria-label="Idioma">
+        <button type="button" data-lang="es" class="active">ES</button>
+        <button type="button" data-lang="ca">CA</button>
+        <button type="button" data-lang="en">EN</button>
+      </div>
+      <a class="btn btn-primary header-cta" href="tel:+34640264494" data-i18n="nav.reserve">Reservar</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- Mobile nav -->
+<div class="mobile-nav" id="mobileNav">
+  <div class="mobile-nav-top">
+    <span class="brand-mark">La Barreta</span>
+    <button class="mobile-nav-close" id="navClose" aria-label="Cerrar menú">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><line x1="5" y1="5" x2="19" y2="19"/><line x1="19" y1="5" x2="5" y2="19"/></svg>
+    </button>
+  </div>
+  <ul>
+    <li><a href="#historia" data-i18n="nav.story">La historia</a></li>
+    <li><a href="#carta" data-i18n="nav.menu">La carta</a></li>
+    <li><a href="#mercado" data-i18n="nav.market">El mercado</a></li>
+    <li><a href="#visita" data-i18n="nav.visit">Cómo llegar</a></li>
+  </ul>
+  <div class="mobile-nav-footer">
+    <a class="btn btn-primary" href="tel:+34640264494" data-i18n="nav.reserve">Reservar</a>
+  </div>
+</div>
+
+<!-- ============================= HERO ============================= -->
+<section class="hero" id="top">
+  <div class="hero-grain" aria-hidden="true"></div>
+  <div class="wrap">
+    <div class="hero-copy">
+      <span class="eyebrow" data-i18n="hero.eyebrow">Carrer de Pi i Margall, Gràcia</span>
+      <h1 class="hero-title" data-reveal>
+        <span data-i18n="hero.title1">Cada plato</span><br>
+        <em data-i18n="hero.title2">lleva un nombre</em><br>
+        <span data-i18n="hero.title3">de la familia.</span>
+      </h1>
+      <p class="hero-lede" data-i18n="hero.lede">Ángel abrió la persiana hace años y desde entonces cocina como en casa: lo que trae el mercado, con el nombre de los suyos en la pizarra. La Nina, el Montxo, la Paca — no son platos, son personas.</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="tel:+34640264494">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L14 13l5 2v4a2 2 0 0 1-2 2C9.5 21 3 14.5 3 6a2 2 0 0 1 1-2Z"/></svg>
+          <span data-i18n="hero.cta1">Llamar y reservar</span>
+        </a>
+        <a class="btn btn-outline" href="#carta" data-i18n="hero.cta2">Ver la carta</a>
+      </div>
+      <div class="hero-meta">
+        <div class="hero-meta-item">
+          <span class="label" data-i18n="hero.meta1label">Barrio</span>
+          <span class="value" data-i18n="hero.meta1value">Gràcia, Barcelona</span>
+        </div>
+        <div class="hero-meta-item">
+          <span class="label" data-i18n="hero.meta2label">Ambiente</span>
+          <span class="value" data-i18n="hero.meta2value">Barra, taburetes y terraza</span>
+        </div>
+        <div class="hero-meta-item">
+          <span class="label" data-i18n="hero.meta3label">Cocina</span>
+          <span class="value" data-i18n="hero.meta3value">Al día, según el mercado</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-panel" data-reveal>
+      <img src="img/hero-vermut.jpg" alt="Vermut de grifo con oliva y bocadillo en la barra de La Barreta" loading="eager">
+      <div class="hero-panel-tag">
+        <strong data-i18n="hero.tagStrong">Vermut de grifo</strong>
+        <span data-i18n="hero.tagText">y bocadillos que no caben en dos manos.</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================= FACTS ============================= -->
+<section class="facts">
+  <div class="wrap">
+    <div class="fact">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 2v20M2 12h20M4.5 4.5l15 15M19.5 4.5l-15 15"/></svg>
+      <div>
+        <h3 data-i18n="facts.item1title">Sin carta fija</h3>
+        <p data-i18n="facts.item1text">Ángel compra cada mañana en el mercado de l'Abaceria. Se cocina lo que hay, no lo que sobra.</p>
+      </div>
+    </div>
+    <div class="fact">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg>
+      <div>
+        <h3 data-i18n="facts.item2title">Solo 20 sitios</h3>
+        <p data-i18n="facts.item2text">Barra y taburetes, sin pretensiones. Reserva o pásate pronto, se llena rápido.</p>
+      </div>
+    </div>
+    <div class="fact">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 21V10l8-6 8 6v11"/><path d="M9 21v-7h6v7"/></svg>
+      <div>
+        <h3 data-i18n="facts.item3title">De toda la vida</h3>
+        <p data-i18n="facts.item3text">Metro Alfons X, a pie de calle en el corazón de Gràcia. Sin cadenas, sin turismo de postal.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================= HISTORIA ============================= -->
+<section class="story" id="historia">
+  <div class="wrap">
+    <div>
+      <div class="story-visual" data-reveal>
+        <svg viewBox="0 0 400 520" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
+          <rect width="400" height="520" fill="#B4472B"/>
+          <g stroke="#F2E8D6" stroke-width="2.2" fill="none" stroke-linecap="round" stroke-linejoin="round" opacity="0.92">
+            <circle cx="200" cy="170" r="62"/>
+            <path d="M110 340 q90 -60 180 0 l0 60 -180 0Z"/>
+            <path d="M150 150 q50 -34 100 0"/>
+            <line x1="170" y1="180" x2="182" y2="180"/>
+            <line x1="218" y1="180" x2="230" y2="180"/>
+            <path d="M182 200 q18 12 36 0"/>
+          </g>
+        </svg>
+      </div>
+      <blockquote class="story-quote">
+        <span data-i18n="story.quote">“La Nina la hace mi hija, el Montxo por mi cuñado, y la Paca con mucho amor.”</span>
+        <cite data-i18n="story.quoteCite">— Reseña de un cliente sobre Ángel</cite>
+      </blockquote>
+    </div>
+    <div>
+      <span class="eyebrow" data-i18n="story.eyebrow">La historia</span>
+      <h2 data-i18n="story.title">Un bar que se cocina en familia, aunque casi nadie de la familia trabaje en él.</h2>
+      <div class="story-body">
+        <p data-i18n="story.p1"><strong>Ángel</strong> lleva La Barreta como quien lleva su propia cocina: con la puerta abierta y la nevera llena de lo que ha comprado esa misma mañana. No hay menú plastificado ni fotos de los platos. Hay una pizarra, letra apretada, y nombres que solo tienen sentido si conoces a la familia.</p>
+        <p data-i18n="story.p2">Cada plato que sale de la barra lleva el nombre de alguien: una hija, un cuñado, una madre. No es un gesto de marketing — es, sencillamente, cómo Ángel ha llamado siempre a las cosas en su casa. Los clientes lo notan enseguida en las reseñas: se habla de los platos como se habla de la gente, con cariño.</p>
+        <p data-i18n="story.p3">El resultado es un bar de barrio sin impostura, donde el vermut se sirve de grifo, los bocadillos no caben en dos manos, y cada mesa —o cada taburete, porque aquí no hay mesas para sentarse— comparte algo del mismo mercado y de la misma cocina de siempre.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================= CARTA ============================= -->
+<section class="menu-section" id="carta">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow" data-i18n="menu.eyebrow">La carta</span>
+      <h2 data-i18n="menu.title">De la familia a la barra</h2>
+      <p data-i18n="menu.lede">La carta cambia con el mercado, pero estos son los nombres que no faltan casi nunca — pregunta por ellos, o deja que Ángel te sorprenda con lo que ha traído hoy.</p>
+    </div>
+
+    <div class="dish-grid">
+      <article class="dish" data-reveal>
+        <div class="dish-photo"><img src="img/dish-nina.jpg" alt="Alcachofas asadas de La Nina" loading="lazy"></div>
+        <div class="dish-body">
+          <h3 class="dish-name"><span class="who" data-i18n="menu.dish1who">Por su hija</span><span data-i18n="menu.dish1name">La Nina</span></h3>
+          <p class="desc" data-i18n="menu.dish1desc">Alcachofas de temporada guisadas despacio, con un fondo que Ángel no comparte con nadie. La preferida de la casa cuando el mercado trae buena verdura.</p>
+        </div>
+      </article>
+
+      <article class="dish" data-reveal>
+        <div class="dish-photo"><img src="img/dish-montxo.jpg" alt="Bocadillo de porchetta El Montxo" loading="lazy"></div>
+        <div class="dish-body">
+          <h3 class="dish-name"><span class="who" data-i18n="menu.dish2who">Por su cuñado</span><span data-i18n="menu.dish2name">El Montxo</span></h3>
+          <p class="desc" data-i18n="menu.dish2desc">Bocadillo generoso, de los que no entran en dos manos: porchetta jugosa, algo verde y crujiente, y pan que aguanta el tipo hasta el final.</p>
+        </div>
+      </article>
+
+      <article class="dish" data-reveal>
+        <div class="dish-photo"><img src="img/dish-paca.jpg" alt="Croquetas caseras La Paca" loading="lazy"></div>
+        <div class="dish-body">
+          <h3 class="dish-name"><span class="who" data-i18n="menu.dish3who">Con mucho amor</span><span data-i18n="menu.dish3name">La Paca</span></h3>
+          <p class="desc" data-i18n="menu.dish3desc">La receta que un cliente describió tal cual: hecha con mucho cariño. Cambia de forma según el día, pero nunca de intención.</p>
+        </div>
+      </article>
+
+      <article class="dish" data-reveal>
+        <div class="dish-photo"><img src="img/dish-paella.jpg" alt="Paella del mercado de los jueves" loading="lazy"></div>
+        <div class="dish-body">
+          <h3 class="dish-name"><span class="who" data-i18n="menu.dish4who">Los jueves</span><span data-i18n="menu.dish4name">Paella del mercado</span></h3>
+          <p class="desc" data-i18n="menu.dish4desc">Cita fija de la semana: arroz hecho con lo mejor que ha entrado esa mañana. Va volando, así que conviene llegar con hambre y sin prisa.</p>
+        </div>
+      </article>
+    </div>
+
+    <div class="menu-note">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="9"/><line x1="12" y1="8" x2="12" y2="12.5"/><circle cx="12" cy="16" r="0.6" fill="currentColor" stroke="none"/></svg>
+      <p data-i18n="menu.note">Croquetas caseras, encurtidos y opciones veggie casi siempre disponibles. La carta exacta se decide cada mañana en el mercado — pregunta en barra qué ha traído Ángel hoy.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============================= MERCADO ============================= -->
+<section class="market" id="mercado">
+  <div class="wrap">
+    <div>
+      <span class="eyebrow" data-i18n="market.eyebrow">El mercado manda</span>
+      <h2 data-i18n="market.title">La dictadura del mercado de l'Abaceria</h2>
+      <p class="market-body" data-i18n="market.p1">No hay proveedor de congelados ni carta impresa a cinco años vista. Cada mañana Ángel camina hasta el mercado de l'Abaceria y decide el día según lo que encuentra: alcachofas, encurtidos, la verdura que está en su punto.</p>
+      <p class="market-body" data-i18n="market.p2">Es un método antiguo — casi terco — en una ciudad que cada vez tiene menos bares así. Pero es la razón por la que un bocadillo aquí sabe distinto: nada lleva más de un día en la nevera.</p>
+      <div class="market-tags">
+        <span class="market-tag" data-i18n="market.tag1">Vermut artesano de grifo</span>
+        <span class="market-tag" data-i18n="market.tag2">Croquetas caseras</span>
+        <span class="market-tag" data-i18n="market.tag3">Encurtidos propios</span>
+        <span class="market-tag" data-i18n="market.tag4">Paella los jueves</span>
+      </div>
+    </div>
+    <div class="market-visual" data-reveal>
+      <img src="img/market.jpg" alt="Verdura fresca de temporada en el mercado de l'Abaceria" loading="lazy">
+    </div>
+  </div>
+</section>
+
+<!-- ============================= VISITA ============================= -->
+<section class="visit" id="visita">
+  <div class="wrap">
+    <div>
+      <span class="eyebrow" data-i18n="visit.eyebrow">Cómo llegar</span>
+      <h2 data-i18n="visit.title">Búscanos en la barra, no en la carta.</h2>
+
+      <div class="info-list">
+        <div class="info-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 21s7-6.2 7-12a7 7 0 1 0-14 0c0 5.8 7 12 7 12Z"/><circle cx="12" cy="9" r="2.4"/></svg>
+          <div>
+            <h3 data-i18n="visit.addressLabel">Dirección</h3>
+            <p>Carrer de Pi i Margall, 77<br>08024 Gràcia, Barcelona</p>
+          </div>
+        </div>
+
+        <div class="info-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="5" y="4" width="14" height="13" rx="4"/><line x1="5" y1="11" x2="19" y2="11"/><circle cx="9" cy="14" r="0.6" fill="currentColor" stroke="none"/><circle cx="15" cy="14" r="0.6" fill="currentColor" stroke="none"/><path d="M8 17l-2 3M16 17l2 3"/></svg>
+          <div>
+            <h3 data-i18n="visit.metroLabel">Metro</h3>
+            <p data-i18n="visit.metroValue">L4 — Alfons X, a pie de calle</p>
+          </div>
+        </div>
+
+        <div class="info-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg>
+          <div>
+            <h3 data-i18n="visit.hoursLabel">Horario</h3>
+            <div class="hours-row"><span data-i18n="visit.day1">Martes – Viernes</span><span>09:30–16:00 · 19:30–22:30</span></div>
+            <div class="hours-row"><span data-i18n="visit.day2">Sábado</span><span>12:30–16:00 · 20:30–22:30</span></div>
+            <div class="hours-row"><span data-i18n="visit.day3">Domingo</span><span>13:00–16:00</span></div>
+            <div class="hours-row"><span data-i18n="visit.day4">Lunes</span><span data-i18n="visit.closed">Cerrado</span></div>
+          </div>
+        </div>
+
+        <div class="info-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L14 13l5 2v4a2 2 0 0 1-2 2C9.5 21 3 14.5 3 6a2 2 0 0 1 1-2Z"/></svg>
+          <div>
+            <h3 data-i18n="visit.phoneLabel">Teléfono</h3>
+            <a href="tel:+34640264494">+34 640 26 44 94</a>
+          </div>
+        </div>
+      </div>
+      <p style="margin-top:22px;font-size:.82rem;color:var(--ink-soft);" data-i18n="visit.disclaimer">* Horario orientativo de un bar de barrio pequeño — puede variar según el día. Mejor confirmar por teléfono antes de venir.</p>
+    </div>
+
+    <div class="map-frame" data-reveal>
+      <iframe
+        src="https://www.google.com/maps?q=Carrer+de+Pi+i+Margall+77,+08024+Barcelona&output=embed"
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        title="Mapa La Barreta">
+      </iframe>
+    </div>
+  </div>
+</section>
+
+<!-- ============================= RESERVE BAND ============================= -->
+<section class="reserve-band">
+  <div class="wrap">
+    <h2 data-i18n="reserve.title">Guarda sitio en la barra de Ángel.</h2>
+    <p data-i18n="reserve.text">Solo 20 sitios, sin mesas para sentarse — así que si vienes en grupo o quieres asegurar taburete, una llamada lo arregla todo.</p>
+    <div class="reserve-actions">
+      <a class="btn btn-light" href="tel:+34640264494">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L14 13l5 2v4a2 2 0 0 1-2 2C9.5 21 3 14.5 3 6a2 2 0 0 1 1-2Z"/></svg>
+        <span data-i18n="reserve.cta1">+34 640 26 44 94</span>
+      </a>
+      <a class="btn btn-outline" href="https://wa.me/34640264494" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 11.5a8.5 8.5 0 0 1-12.4 7.5L4 20l1.1-4.4A8.5 8.5 0 1 1 21 11.5Z"/></svg>
+        <span data-i18n="reserve.cta2">Escribir por WhatsApp</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============================= FOOTER ============================= -->
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <span class="brand-mark">La Barreta</span>
+        <p data-i18n="footer.about">Bar de barrio en Gràcia. Cocina de mercado, vermut de grifo, y platos que llevan el nombre de la familia de Ángel.</p>
+      </div>
+      <div class="footer-col">
+        <h4 data-i18n="footer.exploreLabel">Explorar</h4>
+        <ul>
+          <li><a href="#historia" data-i18n="nav.story">La historia</a></li>
+          <li><a href="#carta" data-i18n="nav.menu">La carta</a></li>
+          <li><a href="#mercado" data-i18n="nav.market">El mercado</a></li>
+          <li><a href="#visita" data-i18n="nav.visit">Cómo llegar</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4 data-i18n="footer.contactLabel">Contacto</h4>
+        <ul>
+          <li><a href="tel:+34640264494">+34 640 26 44 94</a></li>
+          <li><a href="https://wa.me/34640264494" target="_blank" rel="noopener">WhatsApp</a></li>
+          <li><span>Carrer de Pi i Margall, 77, Barcelona</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span data-i18n="footer.rights">© 2026 La Barreta — Gràcia, Barcelona.</span>
+      <span data-i18n="footer.note">Sitio no oficial de un bar de barrio, hecho con cariño.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
